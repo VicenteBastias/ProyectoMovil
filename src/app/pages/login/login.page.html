@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-title class="ion-text-center">
+    </ion-card-title>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">User</ion-label>
+        <ion-input  type="email" 
+                    [(ngModel)]="user.user"
+                    required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input  type="password"  
+                    [(ngModel)]="user.password"
+                    pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{4,8}$"
+                    required></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <ion-button shape="block" (click)="login()">Login</ion-button>
+  </ion-card>
+</ion-content>
