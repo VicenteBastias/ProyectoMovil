@@ -1,0 +1,7 @@
+{
+  "name": "TrabajoSemestral",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
